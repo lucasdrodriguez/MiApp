@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "MiApp": {
+    "appClaeUno": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/MiApp",
+            "outputPath": "dist/appClaeUno",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "MiApp:build"
+            "browserTarget": "appClaeUno:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "MiApp:build:production"
+              "browserTarget": "appClaeUno:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "MiApp:build"
+            "browserTarget": "appClaeUno:build"
           }
         },
         "test": {
@@ -110,15 +110,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "MiApp:serve"
+            "devServerTarget": "appClaeUno:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "MiApp:serve:production"
+              "devServerTarget": "appClaeUno:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "MiApp"
+    }
+  },
+  "defaultProject": "appClaeUno",
+  "cli": {
+    "analytics": "0910fc37-834c-45bc-8ad4-91f48cb310ee"
+  }
 }
